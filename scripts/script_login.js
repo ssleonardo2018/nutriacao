@@ -5,7 +5,7 @@ function validarLogin() {
 
       if (usuario === "teste" && senha === "123") {
         alert("Login bem-sucedido!");
-        window.location.href = "menu.html";// Redirecionar ou realizar outra ação após login
+        href = "menu.html";// Redirecionar ou realizar outra ação após login
         return true;
       } else {
         mensagemErro.textContent = "Usuário ou senha incorretos.";
