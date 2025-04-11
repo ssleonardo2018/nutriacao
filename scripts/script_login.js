@@ -5,7 +5,7 @@ function validarLogin() {
 
       if (usuario === "teste" && senha === "123") {
         alert("Login bem-sucedido!");
-        href = "menu.html";// Redirecionar ou realizar outra ação após login
+            location.assign(https://ssleonardo2018.github.io/nutriacao/index.html? ;// Redirecionar ou realizar outra ação após login
         return true;
       } else {
         mensagemErro.textContent = "Usuário ou senha incorretos.";
