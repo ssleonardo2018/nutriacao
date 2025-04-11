@@ -88,6 +88,12 @@
       text-align: center;
     }
 
+    .error {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+    }
+
     .footer-text {
       margin-top: 20px;
       font-size: 12px;
@@ -101,19 +107,22 @@
   <div class="login-container">
     <img class="logo" src="assets/logo_nutriacao.png" alt="logo">
     <h2>NUTRIAÇÃO</h2>
-    <form>
+    <form onsubmit="return validarLogin()">
       <div class="form-group">
         <!--<label for="username">Usuário</label>-->
-        <input type="text" id="username" placeholder="Digite seu usuário" required>
+        <input type="text" id="usuario" placeholder="Digite seu usuário" required>
       </div>
       <div class="form-group">
         <!--<label for="password">Senha</label>-->
-        <input type="password" id="password" placeholder="Digite sua senha" required>
+        <input type="password" id="senha" placeholder="Digite sua senha" required>
       </div>
-      <a href="../agendar_consulta.html"></a><button type="submit" class="login-btn">Entrar</button>
+      <button type="submit" class="login-btn">Entrar</button>
+      <div id="mensagemErro" class="error"></div>
     <a href="menu.html"><p>Criar Conta</p></a>
     </form>
     <div class="footer-text">© 2025 NUTRIAÇÃO</div>
   </div>
+  <script src="scripts/script_login.js"></script>
+
 </body>
 </html>
